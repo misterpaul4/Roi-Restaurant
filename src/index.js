@@ -1,8 +1,10 @@
-import heroContent from './mod/hero';
+import mainImg from './mod/hero';
+import navBar from './mod/navbar';
+import 'bootstrap';
 import './css/style.css';
 
 const render = (() => {
   const container = document.getElementById('content');
-  
-  container.appendChild(heroContent());
+  container.appendChild(mainImg());
+  container.appendChild(navBar());
 })();
