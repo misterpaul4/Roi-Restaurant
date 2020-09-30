@@ -1,6 +1,7 @@
 import mainImg from './mod/hero';
 import navBar from './mod/navbar';
 import locations from './mod/location';
+import menu from './mod/menu';
 import 'bootstrap';
 import './css/style.css';
 
@@ -9,5 +10,6 @@ const render = (() => {
   const contentBox = mainImg();
   container.appendChild(navBar());
   container.appendChild(contentBox);
-  contentBox.appendChild(locations());
+  // contentBox.appendChild(locations());
+  contentBox.appendChild(menu());
 })();

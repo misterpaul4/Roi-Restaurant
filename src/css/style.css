@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 nav {
   position: fixed;
   top: 10px;
@@ -20,7 +24,7 @@ nav {
 
 .card {
   width: 15em;
-  background-color:  #dfe4e0;
+  text-shadow: whitesmoke;
 }
 
 .logo {
