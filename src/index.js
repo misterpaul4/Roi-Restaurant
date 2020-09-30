@@ -1,5 +1,8 @@
-import hero from './tabby/hero';
+import heroContent from './mod/hero';
+import './css/style.css';
 
-const container = document.getElementById('content');
-
-container.innerHTML = hero;
+const render = (() => {
+  const container = document.getElementById('content');
+  
+  container.appendChild(heroContent());
+})();

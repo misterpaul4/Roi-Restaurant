@@ -1,0 +1,9 @@
+.hero {
+  width: 100%;
+  margin-top: -2px;
+  height: 600px;
+  background-image: url('https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+  background-position: center 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
