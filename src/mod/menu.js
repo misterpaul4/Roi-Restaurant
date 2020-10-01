@@ -51,4 +51,13 @@ const menu = () => {
   return container
 }
 
-export default menu
+const menuLink = () => {
+  const link = document.createElement('a');
+  link.href = '#';
+  link.textContent = 'Menu';
+  link.classList.add('mx-5');
+
+  return link
+}
+
+export { menuLink }

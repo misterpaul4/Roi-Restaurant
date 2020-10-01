@@ -1,7 +1,12 @@
-import Icon from '../img/logo.png';
+const homeLink = () => {
+  const link = document.createElement('a');
+  link.href = '#';
+  link.textContent = 'Home';
 
+  return link
+}
 
-const locations = () => {
+const homeContent = () => {
   const container = document.createElement('div');
   container.classList.add('d-flex', 'flex-wrap', 'align-items-center')
   container.innerHTML = `
@@ -41,4 +46,4 @@ const locations = () => {
   return container
 }
 
-export default locations;
+export { homeLink, homeContent };
