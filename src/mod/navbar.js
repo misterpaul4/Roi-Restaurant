@@ -1,7 +1,7 @@
 import Icon from '../img/logo.png';
-import { homeLink } from './location';
-import { contactLink } from './contact';
-import { menuLink } from './menu';
+import home from './location';
+import contact from './contact';
+import menu from './menu';
 
 const navBar = () => {
   const container = document.createElement('nav');
@@ -19,15 +19,16 @@ const navBar = () => {
   logo.src = `${Icon}`;
 
   navItemsContainer.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'nav-item-container', 'mx-5', 'px-5');
+  navLinkItemsContainer.className = 'nav-links';
   logo.classList.add('logo');
 
   container.appendChild(navItemsContainer);
   navItemsContainer.appendChild(logo);
   navItemsContainer.appendChild(navLinkItemsContainer);
   navItemsContainer.appendChild(socialsContainer);
-  navLinkItemsContainer.appendChild(homeLink());
-  navLinkItemsContainer.appendChild(menuLink());
-  navLinkItemsContainer.appendChild(contactLink());
+  navLinkItemsContainer.appendChild(home.link());
+  navLinkItemsContainer.appendChild(menu.link());
+  navLinkItemsContainer.appendChild(contact.link());
 
   return container
 }
