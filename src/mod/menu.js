@@ -45,16 +45,12 @@ const menu = (() => {
       </div>
     </div>
   </div>
-  `
-  const content = () => {
-    return container
-  }
+  `;
+  const content = () => container;
 
-  const link = () => {
-    return anchor
-  }
+  const link = () => anchor;
 
-  return { content, link }
+  return { content, link };
 })();
 
 export default menu;

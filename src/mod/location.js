@@ -1,11 +1,11 @@
 const home = (() => {
   const anchor = document.createElement('a');
-  anchor.setAttribute('id', 'home-btn')
+  anchor.setAttribute('id', 'home-btn');
   anchor.href = '#';
   anchor.textContent = 'Home';
 
   const container = document.createElement('div');
-  container.classList.add('d-flex', 'flex-wrap')
+  container.classList.add('d-flex', 'flex-wrap');
   container.innerHTML = `
     <div class="card m-3">
       <img class="card-img-top" src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="Card image cap">
@@ -38,17 +38,13 @@ const home = (() => {
         <p>+123-787-1478</p>
       </div>
     </div>
-    `
+    `;
 
-  const link = () => {
-    return anchor
-  }
+  const link = () => anchor;
 
-  const content = () => {
-    return container
-  }
+  const content = () => container;
 
-  return { link, content }
+  return { link, content };
 })();
 
 export default home;

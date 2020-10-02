@@ -14,7 +14,7 @@ const navBar = () => {
     <a href="https://twitter.com/paulajuze"><i class="fab fa-twitter-square"></i></a>
     <a href="https://www.instagram.com/paulajuze/"><i class="fab fa-instagram-square mx-2"></i></a>
     <a href="mailto: ajuzepaul@gmail.com"><i class="fas fa-paper-plane"></i></a>
-  `
+  `;
 
   logo.src = `${Icon}`;
 
@@ -30,7 +30,7 @@ const navBar = () => {
   navLinkItemsContainer.appendChild(menu.link());
   navLinkItemsContainer.appendChild(contact.link());
 
-  return container
-}
+  return container;
+};
 
-export default navBar
+export default navBar;

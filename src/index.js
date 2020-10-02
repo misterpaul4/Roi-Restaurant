@@ -1,13 +1,14 @@
-import mainImg from "./mod/hero";
-import navBar from "./mod/navbar";
-import "bootstrap";
-import "./css/style.css";
-import home from "./mod/location";
+import mainImg from './mod/hero';
+import navBar from './mod/navbar';
+import 'bootstrap';
+import './css/style.css';
+import home from './mod/location';
 import menu from './mod/menu';
-import contact from './mod/contact'
+import contact from './mod/contact';
 
+// eslint-disable-next-line no-unused-vars
 const render = (() => {
-  const container = document.getElementById("content");
+  const container = document.getElementById('content');
   const contentBox = mainImg();
 
   container.appendChild(navBar());
@@ -15,7 +16,7 @@ const render = (() => {
 
   const clearHtml = () => {
     contentBox.innerHTML = ' ';
-  }
+  };
 
   let currentActiveLink = home.link();
 
@@ -23,7 +24,7 @@ const render = (() => {
     currentActiveLink.classList.remove('active-link');
     currentActiveLink = anchor;
     anchor.classList.add('active-link');
-  }
+  };
 
   window.onload = () => {
     setActiveLink(home.link());
@@ -36,6 +37,6 @@ const render = (() => {
       clearHtml();
       setActiveLink(item.link());
       contentBox.appendChild(item.content());
-    })
-  })
+    });
+  });
 })();

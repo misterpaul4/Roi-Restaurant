@@ -4,7 +4,7 @@ const contact = (() => {
       <input type='email' id='email' placeholder="Email"><br>
       <input type='tel' id='number' placeholder="Phone Number"><br>
       <buton type='submit'>Submit</button>
-    `
+    `;
   container.classList.add('align-self-center');
 
   const anchor = document.createElement('a');
@@ -12,16 +12,11 @@ const contact = (() => {
   anchor.textContent = 'Contact';
   anchor.setAttribute('id', 'contact-btn');
 
-  const content = () => {
-    return container
-  }
+  const content = () => container;
 
-  const link = () => {
-    return anchor
-  }
+  const link = () => anchor;
 
-  return { content, link }
-
+  return { content, link };
 })();
 
 export default contact;
