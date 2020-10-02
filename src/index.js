@@ -1,4 +1,3 @@
-import mainImg from './mod/hero';
 import navBar from './mod/navbar';
 import 'bootstrap';
 import './css/style.css';
@@ -9,7 +8,9 @@ import contact from './mod/contact';
 // eslint-disable-next-line no-unused-vars
 const render = (() => {
   const container = document.getElementById('content');
-  const contentBox = mainImg();
+
+  const contentBox = document.createElement('div');
+  contentBox.classList.add('hero');
 
   container.appendChild(navBar());
   container.appendChild(contentBox);
