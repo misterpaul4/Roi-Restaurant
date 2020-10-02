@@ -13,11 +13,11 @@ const render = (() => {
   container.appendChild(navBar());
   container.appendChild(contentBox);
 
-  let currentActiveLink;
-
   const clearHtml = () => {
     contentBox.innerHTML = ' ';
   }
+
+  let currentActiveLink = home.link();
 
   const setActiveLink = (anchor) => {
     currentActiveLink.classList.remove('active-link');
@@ -28,24 +28,14 @@ const render = (() => {
   window.onload = () => {
     setActiveLink(home.link());
     contentBox.appendChild(home.content());
-    currentActiveLink = home.link();
   };
 
-  home.link().addEventListener('click', () => {
-    clearHtml();
-    setActiveLink(home.link());
-    contentBox.appendChild(home.content());
-  });
-
-  menu.link().addEventListener('click', () => {
-    clearHtml();
-    setActiveLink(menu.link());
-    contentBox.appendChild(menu.content());
-  })
-
-  contact.link().addEventListener('click', () => {
-    clearHtml();
-    setActiveLink(contact.link());
-    contentBox.appendChild(contact.content());
+  const arr = [menu, contact, home];
+  arr.forEach((item) => {
+    item.link().addEventListener('click', () => {
+      clearHtml();
+      setActiveLink(item.link());
+      contentBox.appendChild(item.content());
+    })
   })
 })();

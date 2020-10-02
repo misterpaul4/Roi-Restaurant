@@ -5,12 +5,14 @@ const contact = (() => {
       <input type='tel' id='number' placeholder="Phone Number"><br>
       <buton type='submit'>Submit</button>
     `
+  container.classList.add('align-self-center');
+
   const anchor = document.createElement('a');
   anchor.href = '#';
   anchor.textContent = 'Contact';
   anchor.setAttribute('id', 'contact-btn');
 
-  const form = () => {
+  const content = () => {
     return container
   }
 
@@ -18,7 +20,7 @@ const contact = (() => {
     return anchor
   }
 
-  return { form, link }
+  return { content, link }
 
 })();
 
