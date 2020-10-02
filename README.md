@@ -16,7 +16,6 @@
 
 [Live Demo Link](https://misterpaul4.github.io/Roi-Restaurant/)
 
-
 ## Getting Started
 
 Clone the repository to get a local copy.
