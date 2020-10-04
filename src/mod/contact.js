@@ -5,7 +5,7 @@ const contact = (() => {
       <input type='tel' id='number' placeholder="Phone Number"><br>
       <buton type='submit'>Submit</button>
     `;
-  container.classList.add('align-self-center');
+  container.classList.add('align-self-center', 'p-5');
 
   const anchor = document.createElement('a');
   anchor.href = '#';
