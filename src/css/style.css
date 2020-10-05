@@ -1,0 +1,64 @@
+.hero {
+  width: 100%;
+  margin-top: -2px;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1428515613728-6b4607e44363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+  background-position: center 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  font-size: x-large;
+}
+
+.card {
+  width: 15em;
+  font-size: medium;
+}
+
+.logo {
+  width: 80px;
+}
+
+.link-bg,
+form {
+  background-color: wheat;
+}
+
+.nav-item-container {
+  background-color: chocolate;
+  border-radius: 20px;
+  box-shadow: -0.3rem -0.3rem 0.7rem #502920, 0.3rem 0.3rem 0.5rem rgba(208, 115, 71, 0.288);
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.active-link {
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.button-choco {
+  background-color: chocolate;
+}
