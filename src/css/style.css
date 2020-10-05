@@ -41,8 +41,7 @@ form {
 .nav-item-container {
   background-color: chocolate;
   border-radius: 20px;
-  box-shadow: -0.3rem -0.3rem 0.7rem #502920,
-    0.3rem 0.3rem 0.5rem rgba(208, 115, 71, 0.288);
+  box-shadow: -0.3rem -0.3rem 0.7rem #502920, 0.3rem 0.3rem 0.5rem rgba(208, 115, 71, 0.288);
 }
 
 a {
