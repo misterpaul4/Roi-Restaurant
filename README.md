@@ -18,7 +18,10 @@
 
 ## Getting Started
 
-Clone the repository to get a local copy.
+- Clone the repository to get a local copy `git clone https://github.com/misterpaul4/Roi-Restaurant`
+- In the project's directory, install dependencies by running `npm install`
+- `npm run webpack` to compile and watch for changes
+- `npm run server` to run locally.
 
 ## Authors
 
