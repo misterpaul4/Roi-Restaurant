@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://misterpaul4.github.io/Roi-Restaurant/)
+[Live Demo Link](https://competent-mayer-89cfe8.netlify.app/)
 
 ## Getting Started
 
