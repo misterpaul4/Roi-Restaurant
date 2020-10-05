@@ -59,3 +59,7 @@ a:hover {
   color: whitesmoke;
   border-bottom: 1px solid whitesmoke;
 }
+
+.button-choco {
+  background-color: chocolate;
+}

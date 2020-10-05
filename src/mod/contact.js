@@ -2,8 +2,8 @@ const contact = (() => {
   const container = document.createElement('form');
   container.innerHTML = `
       <input type='email' id='email' placeholder="Email"><br>
-      <input type='tel' id='number' placeholder="Phone Number"><br>
-      <buton type='submit'>Submit</button>
+      <p><input type='tel' id='number' placeholder="Phone Number"></p>
+      <buton type='submit' class='button-choco text-light px-3 py-2'>Submit</button>
     `;
   container.classList.add('align-self-center', 'p-5');
 
